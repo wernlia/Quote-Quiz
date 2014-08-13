@@ -1,0 +1,64 @@
+#theQuiz{
+	display:none;
+}
+
+#correctArea{
+	display:none;
+}
+
+#wrongArea{
+	display:none;
+}
+
+[class*="col-"] {
+    text-align: center;
+}
+
+#theQuoteBox{
+	border: 5px solid black;
+	border-radius: 25px;
+	height: 150px;
+	margin-top: 20px;
+}
+
+#correctBox{
+	border: 5px solid green;
+	border-radius: 25px;
+	height: 150px;
+	margin-top: 20px;
+}
+
+#wrongBox{
+	border: 5px solid red;
+	border-radius: 25px;
+	height: 150px;
+	margin-top: 20px;
+}
+.headingBold{
+	font-size: x-large;
+}
+
+#theQuoteContainer{
+	padding-top: 40px;
+}
+
+#correctContainer{
+	padding-top: 55px;
+}
+
+#wrongContainer{
+	padding-top: 55px;
+}
+
+#nextButton{
+	padding-top: 5px;
+}
+
+#pratchettButton{
+	margin-top: 10px;
+}
+
+#adamsButton{
+	margin-top: 10px;
+}
+

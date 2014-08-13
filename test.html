@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <!-- <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+        <title>BDD Homework</title>
+	
+        <script src="js/jquery-1.11.1.js"></script>
+		<script src="js/myscripts.js"></script> 	
+        <!--  The following stylesheet is just for the instructions panel -->
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+	
+
+    </head>
+    <body>
+    	<div id="welcomeText" class="row">
+    		<div class="col-md-1"></div>
+    		<div class="col-md-1"></div>
+    		<div class="col-md-1"></div>
+    		<div class="col-md-1"></div>
+    		<div class="col-md-4">
+    			<p class="headingBold"><b>Ready for a quiz?</b></p>
+                <p class="subHeading"> Each quote is from Terry Pratchett or Douglas Adams.</p>
+    		</div>
+    		<div class="col-md-1"></div>
+    		<div class="col-md-1"></div>
+    		<div class="col-md-1"></div>
+    		<div class="col-md-1"></div>
+    	</div>
+        <div id="startButtonContainer" class="row">
+            <div class="col-md-12">
+                <p><button type="button" class="btn btn-primary" id="startButton">Let's Go</button></p>
+            </div>
+        </div>
+    	<span id="theQuiz">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
+    	    	<div class="col-md-8" id="theQuoteBox">
+                    <div class="row" id="theQuoteContainer">                    
+                        <div class="col-xs-6">
+                            Who said: <i>"Light thinks it travels faster than anything but it is wrong. No matter how fast light travels, it finds the darkness has always got there first, and is waiting for it."</i>
+                        </div>
+                        <div class="col-xs-1"></div>
+                        <div class="col-xs-2">
+                            <button type="button" class="btn btn-info" id="pratchettButton">Terry Pratchett</button>
+                        </div>
+                        <div class="col-xs-2">
+                            <button type="button" class="btn btn-info" id="adamsButton">Douglas Adams</button>
+                        </div>
+                        <div class="col-xs-1"></div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
+            </div>
+        </span>
+        <span id="correctArea">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
+                <div class="col-md-8" id="correctBox"> 
+                    <div class="row" id="correctContainer">
+                        <div class="col-md-8">Correct!</div>
+                        
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-primary" id="nextButton">Next Quote</button>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+            </div>
+        </span>
+        <span id="wrongArea">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
+                <div class="col-md-8" id="wrongBox"> 
+                    <div class="row" id="wrongContainer">
+                        <div class="col-md-8">Wrong :(</div>
+                        
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-primary" id="nextButton2">Next Quote</button>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+            </div>
+        </span>
+    </body>
+</html>
