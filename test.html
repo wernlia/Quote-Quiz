@@ -33,71 +33,69 @@
                 <p><button type="button" class="btn btn-primary" id="startButton">Let's Go</button></p>
             </div>
         </div>
-    	<span id="theQuiz">
+    	<div id="theQuiz" class="container-fluid">
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-1"></div>
     	    	<div class="col-md-8" id="theQuoteBox">
-                    <div class="row" id="theQuoteContainer">                    
-                        <div class="col-xs-6">
-                            Who said: <i id="theActualQuote">"Light thinks it travels faster than anything but it is wrong. No matter how fast light travels, it finds the darkness has always got there first, and is waiting for it."</i>
-                        </div>
-                        <div class="col-xs-1"></div>
-                        <div class="col-xs-2">
-                            <button type="button" class="btn btn-info" id="pratchettButton">Terry Pratchett</button>
-                        </div>
-                        <div class="col-xs-2">
-                            <button type="button" class="btn btn-info" id="adamsButton">Douglas Adams</button>
-                        </div>
-                        <div class="col-xs-1"></div>
-                    </div>
+                    Who said: <i id="theActualQuote">"Light thinks it travels faster than anything but it is wrong. No matter how fast light travels, it finds the darkness has always got there first, and is waiting for it."</i>
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-1"></div>
             </div>
-        </span>
-        <span id="correctArea">
+        </div>
+        <div id="correctArea" class="container-fluid">
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-1"></div>
                 <div class="col-md-8" id="correctBox"> 
-                    <div class="row" id="correctContainer">
-                        <div class="col-md-8">Correct, you hoopy frood!</div>
-                        
-                        <div class="col-md-2">
-                            <button type="button" class="btn btn-primary" id="nextButton">Next Quote</button>
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-1"></div>
-                    </div>
+                    Correct, you hoopy frood!
                 </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
             </div>
-        </span>
-        <span id="wrongArea">
+        </div>
+        <div id="buttonArea" class = "container-fluid">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-info" id="pratchettButton">Terry Pratchett</button>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-info" id="adamsButton">Douglas Adams</button>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        
+        <div id="wrongArea" class="container-fluid">
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-1"></div>
                 <div class="col-md-8" id="wrongBox"> 
-                    <div class="row" id="wrongContainer">
-                        <div class="col-md-8">Nope. Must be a Thursday.</div>
-                        
-                        <div class="col-md-2">
-                            <button type="button" class="btn btn-primary" id="nextButton2">Next Quote</button>
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-1"></div>
+                    Nope. Must be a Thursday. You never could get the hang of Thursdays.
                     </div>
                 </div>
             </div>
-        </span>
-        <span id="yourScoreBox">
+        </div>
+        <div id="nextButtonArea" class = "container-fluid">
             <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-1"></div>
-                <div class="col-md-8"> 
+                <div class="col-md-5"></div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-primary" id="nextButton">Next Quote</button>
+                </div>
+                <div class="col-md-5"></div>
+            </div>
+        </div>
+        <div id="yourScoreBox" class="container-fluid">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8" id="answerText"> 
                     Your final score was <div id="yourScore">score</div> out of 12.
                 </div>
+                <div class="col-md-2"></div>
             </div>
-        </span>
+        </div>
     </body>
 </html>

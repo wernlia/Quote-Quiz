@@ -17,14 +17,20 @@
 #theQuoteBox{
 	border: 5px solid black;
 	border-radius: 25px;
-	height: 150px;
 	margin-top: 20px;
 }
 
+#buttonArea{
+	margin-top: 20px;
+	display:none;
+}
+
+#nextButtonArea{
+	margin-top: 20px;
+	display:none;
+}
+
 #yourScoreBox{
-	border: 5px solid black;
-	border-radius: 25px;
-	height: 150px;
 	margin-top: 20px;
 	display:none;
 }
@@ -32,41 +38,19 @@
 #correctBox{
 	border: 5px solid green;
 	border-radius: 25px;
-	height: 150px;
 	margin-top: 20px;
 }
 
 #wrongBox{
 	border: 5px solid red;
 	border-radius: 25px;
-	height: 150px;
 	margin-top: 20px;
 }
 .headingBold{
 	font-size: x-large;
 }
 
-#theQuoteContainer{
-	padding-top: 40px;
-}
-
-#correctContainer{
-	padding-top: 55px;
-}
-
-#wrongContainer{
-	padding-top: 55px;
-}
-
-#nextButton{
-	padding-top: 5px;
-}
-
-#pratchettButton{
-	margin-top: 10px;
-}
-
-#adamsButton{
-	margin-top: 10px;
+#answerText{
+	font-size: x-large;
 }
 

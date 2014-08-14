@@ -6,7 +6,7 @@
 //});
 var usedQuotes = [];
 var quoteIndex;
-var correctAnswers = 1;
+var correctAnswers = 0;
 var quoteAnswerKey = [605, 765, 35, 1845, 285, 585, 1545, 45, 775, 1125, 1765, 1665];
 
 $(document).ready(function(){
@@ -22,12 +22,6 @@ $(document).ready(function(){
     adamsSelected();
   });
   $('#nextButton').click(function(){
-    if(usedQuotes.length < 12){
-      nextQuote();
-    }
-    else theFinalAnswer();
-  });
-  $("#nextButton2").click(function(){
     if(usedQuotes.length < 12){
       nextQuote();
     }
@@ -63,12 +57,14 @@ var getAQuote = function(){
 };
 
 var theAnswerToLifeTheUniverseAndEverything = function(theQuestion){
+  debugger;
   var theAnswer = Math.floor(Math.abs((2*(Math.sin((theQuestion*Math.PI)/360))*(Math.cos((theQuestion*Math.PI)/360))) * 60));
+  debugger;
   return theAnswer;
 }
 
 var pratchettSelected = function(){
-  var theAnswer = theAnswerToLifeTheUniverseAndEverything(quoteIndex);
+  var theAnswer = theAnswerToLifeTheUniverseAndEverything(quoteAnswerKey[quoteIndex]);
   if(theAnswer != 42){
     showCorrect();
     correctAnswers += 1;
@@ -80,7 +76,7 @@ var pratchettSelected = function(){
 }
 
 var adamsSelected = function(){
-  var theAnswer = theAnswerToLifeTheUniverseAndEverything(quoteIndex);
+  var theAnswer = theAnswerToLifeTheUniverseAndEverything(quoteAnswerKey[quoteIndex]);
   if(theAnswer == 42){
     showCorrect();
     correctAnswers += 1;
@@ -92,12 +88,16 @@ var adamsSelected = function(){
 
 var showCorrect = function(){
   $("#theQuiz").hide();
+  $("#buttonArea").hide();
   $("#correctArea").show();
+  $("#nextButtonArea").show();
 }
 
 var showWrong = function(){
   $('#theQuiz').hide();
+  $("#buttonArea").hide();
   $("#wrongArea").show();
+  $("#nextButtonArea").show();
 }
 
 var nextQuote = function(){
@@ -105,12 +105,17 @@ var nextQuote = function(){
   $("#theActualQuote").text(newQuote);
   $("#correctArea").hide();
   $("#wrongArea").hide();
+  $("#nextButtonArea").hide();
    $("#theQuiz").slideDown("slow");
+   $("#buttonArea").show();
 }
 
 var theFinalAnswer = function(){
   $("#correctArea").hide();
   $("#wrongArea").hide();
+  $("#nextButtonArea").hide();
   $("#theQuiz").hide();
+  $("#yourScore").text(correctAnswers);
+  $("#yourScoreBox").show();
 
 }
