@@ -21,6 +21,14 @@
 	margin-top: 20px;
 }
 
+#yourScoreBox{
+	border: 5px solid black;
+	border-radius: 25px;
+	height: 150px;
+	margin-top: 20px;
+	display:none;
+}
+
 #correctBox{
 	border: 5px solid green;
 	border-radius: 25px;
